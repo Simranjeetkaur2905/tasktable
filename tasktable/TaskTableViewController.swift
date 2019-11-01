@@ -38,14 +38,17 @@ class TaskTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let task = tasks?[indexPath.row]{
-           // let range = task.range(of: "important:")
-          //  print(range)
-            let contain = task.contains("important:")
-            let cellidentifier = (contain == true) ? "importanttask" : "normaltask"
+        if var task = tasks?[indexPath.row]{
+           let range = task.range(of: "important:")
+            print(range)
+//            let contain = task.contains("important:")
+//            let cellidentifier = (contain == true) ? "importanttask" : "normaltask"
        
             
-            //let cellidentifier = (range = nil) ? "importanttask" : "normaltask"
+            let cellidentifier = (range != nil) ? "importanttask" : "normaltask"
+            
+            
+           // if range != nil{ task = task[range]}
         if let cell = tableView.dequeueReusableCell(withIdentifier: cellidentifier){
             if let label = cell.viewWithTag(1) as?
                 UILabel{
