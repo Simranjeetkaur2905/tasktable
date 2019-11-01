@@ -14,6 +14,7 @@
 		9B4D8C8E236CA55E000454A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4D8C8C236CA55E000454A4 /* LaunchScreen.storyboard */; };
 		9B4D8C99236CA55E000454A4 /* tasktableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D8C98236CA55E000454A4 /* tasktableTests.swift */; };
 		9B4D8CA4236CA55E000454A4 /* tasktableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D8CA3236CA55E000454A4 /* tasktableUITests.swift */; };
+		9B4D8CB2236CA754000454A4 /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D8CB1236CA754000454A4 /* TaskTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9B4D8C9F236CA55E000454A4 /* tasktableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tasktableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4D8CA3236CA55E000454A4 /* tasktableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tasktableUITests.swift; sourceTree = "<group>"; };
 		9B4D8CA5236CA55E000454A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B4D8CB1236CA754000454A4 /* TaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				9B4D8C8A236CA55E000454A4 /* Assets.xcassets */,
 				9B4D8C8C236CA55E000454A4 /* LaunchScreen.storyboard */,
 				9B4D8C8F236CA55E000454A4 /* Info.plist */,
+				9B4D8CB1236CA754000454A4 /* TaskTableViewController.swift */,
 			);
 			path = tasktable;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B4D8CB2236CA754000454A4 /* TaskTableViewController.swift in Sources */,
 				9B4D8C86236CA55E000454A4 /* ViewController.swift in Sources */,
 				9B4D8C84236CA55E000454A4 /* AppDelegate.swift in Sources */,
 			);
