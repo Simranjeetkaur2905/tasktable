@@ -21,7 +21,7 @@ class TaskTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        tasks = ["important:Buy milk","Clean kitchen","Wash dishes","Pay bills"]
+        tasks = ["important: Buy milk","Clean kitchen","Wash dishes","important: Pay bills","important: finish halloween exercise"]
     }
 
     // MARK: - Table view data source
@@ -39,8 +39,14 @@ class TaskTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let task = tasks?[indexPath.row]{
-        
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "normaltask"){
+           // let range = task.range(of: "important:")
+          //  print(range)
+            let contain = task.contains("important:")
+            let cellidentifier = (contain == true) ? "importanttask" : "normaltask"
+       
+            
+            //let cellidentifier = (range = nil) ? "importanttask" : "normaltask"
+        if let cell = tableView.dequeueReusableCell(withIdentifier: cellidentifier){
             if let label = cell.viewWithTag(1) as?
                 UILabel{
                 label.text = task
@@ -49,6 +55,7 @@ class TaskTableViewController: UITableViewController {
             return cell
         }
         }
+        
         return UITableViewCell()
         
       //  let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
